@@ -73,4 +73,12 @@ public class Jugador extends Personaje {
 	private void actualizarVidaJugador() {
 		juego.actualizarVidaJugador(vida);
 	}
+	
+	/**
+	 * Si el jugador muere, se pierde el juego
+	 */
+	public void morir() {
+		state.morir();
+		juego.perderJuego();
+	}
 }

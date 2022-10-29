@@ -142,7 +142,6 @@ public class Juego {
 			e.morir();
 			removerEntidad(e);
 		}
-		perderJuego();
 	}
 
 	/**
@@ -284,12 +283,10 @@ public class Juego {
 	}
 
 	/**
-	 * Si el jugador pierde su vida, el juego termina
+	 * hace que el juego se pierda
 	 */
 	public void perderJuego() {
-		if (jugador.getVida() <= 0) {
-			gui.perderJuego();
-		}
+		gui.perderJuego();
 	}
 
 	/**

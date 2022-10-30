@@ -5,7 +5,7 @@ La expresion regular definida modela como es el ciclo de partidas en el juego.
 Los archivos del Framework TAPIR se encuentra en el paquete **src.tapir**
 
 # Expresion regular definida para el funcionamiento de la clase Juego
-## c((m|d)*(p|g)r)*
+## c((m|d)\*(p|g)r)\*
 ### significado de cada simbolo
 - c -> crear el juego
 - m -> movimiento del jugador
